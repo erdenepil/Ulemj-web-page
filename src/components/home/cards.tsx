@@ -51,7 +51,7 @@ export default function Salon({ brand }: { brand: string }) {
             left: {
                 image: "goli",
                 title: "Apple Cide Vinegar Gummies",
-                text: "Infused with a delicious flavor profile. Taste the Apple. Not the Vinegar.®",
+                text: "Infused with a delicious flavor p rofile. Taste the Apple. Not the Vinegar.®",
                 button: {
                     title: "Read more",
                     route: "https://shop.ulemjgrease.com/posts/3617",

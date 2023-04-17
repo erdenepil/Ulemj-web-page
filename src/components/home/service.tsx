@@ -27,7 +27,7 @@ export default function Service({ brand }: { brand: string }) {
             left: {
                 image: "left",
                 title: "",
-                text: "<div className='text-smaller md:text-sm lg:text-base xl:text-3xl font-light'>One of the brands that Ulemj Pharmacy is proud to distribute is <b>MCCM</b>  Medical Cosmetics LLC of Portugal. This company manufactures aesthetic professional ampoules that are designed to provide clients with exceptional skin care results. Additionally, Ulemj Pharmacy distributes creams for dermatology, allergy, and pain relief from Sheffield Pharmaceutical of the USA.</div>",
+                text: `<div className='text-smaller md:text-sm lg:text-base xl:text-3xl font-light'>One of the brands that Ulemj Pharmacy is proud to distribute is <b>MCCM</b>  Medical Cosmetics LLC of Portugal. This company manufactures aesthetic professional ampoules that are designed to provide clients with exceptional skin care results. Additionally, Ulemj Pharmacy distributes creams for dermatology, allergy, and pain relief from Sheffield Pharmaceutical of the USA.</div>`,
                 route: "http://appointment.ulemjgrease.com/salon-profile/wellness/",
             },
             right: {
