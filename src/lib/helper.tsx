@@ -5,6 +5,7 @@ const colorCodes = {
         hover: "hover:bg-grease",
         button: "bg-grease/90",
         "button-border": "border-grease/90",
+        color: "text-white",
     },
     pharm: {
         bgColor: "bg-pharm",
@@ -12,6 +13,7 @@ const colorCodes = {
         hover: "hover:bg-pharm",
         button: "bg-pharm/90",
         "button-border": "border-pharm/90",
+        color: "text-white",
     },
     clinic: {
         bgColor: "bg-grease",
@@ -19,13 +21,39 @@ const colorCodes = {
         hover: "hover:bg-grease",
         button: "bg-grease/90",
         "button-border": "border-grease/90",
+        color: "text-white",
     },
     stardom: {
         bgColor: "bg-black",
         border: "border-black/50",
         hover: "hover:bg-black",
-        button: "bg-pharm/90",
-        "button-border": "border-pharm/90",
+        button: "bg-white",
+        "button-border": "border-white",
+        color: "text-black",
+    },
+    goodprice: {
+        bgColor: "bg-goodprice",
+        border: "border-goodprice/50",
+        hover: "hover:bg-goodprice",
+        button: "bg-transparent",
+        "button-border": "border-white",
+        color: "text-white",
+    },
+    california: {
+        bgColor: "bg-california",
+        border: "border-california/50",
+        hover: "hover:bg-california",
+        button: "bg-transparent",
+        "button-border": "border-white",
+        color: "text-white",
+    },
+    ulemj: {
+        bgColor: "bg-gradient-to-r from-[#41437b] to-[#bf3d3c]",
+        border: "border-grease/50",
+        hover: "hover:bg-gradient-to-r from-[#41437b] to-[#bf3d3c]",
+        button: "bg-transparent",
+        "button-border": "border-white",
+        color: "text-white",
     },
 };
 

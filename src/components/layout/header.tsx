@@ -51,7 +51,7 @@ export default function Header({ brand }: { brand: string }) {
             {
                 en: "Treatments",
                 mon: "",
-                route: "",
+                route: "http://appointment.ulemjgrease.com/salon-profile/clinic/services ",
             },
             {
                 en: "About",
@@ -63,18 +63,64 @@ export default function Header({ brand }: { brand: string }) {
             {
                 en: "Women",
                 mon: "",
-                route: `#`,
+                route: `https://www.instagram.com/stardom_boutique/`,
             },
             {
                 en: "Lookbook",
                 mon: "",
-                route: `#`,
+                route: `https://www.facebook.com/stardombyplatinum`,
             },
             {
                 en: "About",
                 mon: "Тухай",
                 route: `/${brand}/about`,
             },
+        ],
+        goodprice: [
+            {
+                en: "Delivery",
+                mon: "",
+                route: `https://www.facebook.com/goodpricemarket/ `,
+            },
+            {
+                en: "Shop",
+                mon: "",
+                route: `http://goodprice.mindplay.mn/shopTab/`,
+            },
+            {
+                en: "About",
+                mon: "Тухай",
+                route: `/${brand}/about`,
+            },
+        ],
+        california: [
+            {
+                en: "Reservations",
+                mon: "",
+                route: `tel:+97611319031 `,
+            },
+            {
+                en: "Services",
+                mon: "",
+                route: `https://www.facebook.com/California.Restaurant.MN`,
+            },
+            {
+                en: "About",
+                mon: "Тухай",
+                route: `/${brand}/about`,
+            },
+        ],
+        ulemj: [
+            // {
+            //     en: "Reservations",
+            //     mon: "",
+            //     route: `tel:+97611319031 `,
+            // },
+            // {
+            //     en: "Services",
+            //     mon: "",
+            //     route: `https://www.facebook.com/California.Restaurant.MN`,
+            // },
         ],
     };
 
@@ -92,7 +138,7 @@ export default function Header({ brand }: { brand: string }) {
         setLang(lang === "en" ? "mon" : "en");
     };
 
-    return (
+    return brand ? (
         <div
             className={`relative h-full sm:h-16 flex flex-col gap-y-1 items-center border-b ${
                 colorCodes[brand as keyof Brand]?.border
@@ -100,13 +146,13 @@ export default function Header({ brand }: { brand: string }) {
         >
             <Opacity
                 className="sm:absolute sm:left-0"
-                onClick={() => onNavigate(`/${brand}`)}
+                onClick={() => onNavigate(`/${brand !== "ulemj" ? brand : ""}`)}
                 delay={0.2}
             >
                 <img
                     src={`/images/brand/${brand}.png`}
                     alt={brand}
-                    className="h-16 aspect-auto"
+                    className="h-16 aspect-auto cursor-pointer w-full"
                 />
                 {/* <Image
                     className="cursor-pointer"
@@ -122,7 +168,10 @@ export default function Header({ brand }: { brand: string }) {
                         return (
                             <Opacity
                                 className={`cursor-pointer ${
-                                    index === 2 &&
+                                    index ===
+                                        centerItems[brand as keyof Brand]
+                                            .length -
+                                            1 &&
                                     router.pathname.includes("about")
                                         ? "font-bold"
                                         : "font-normal"
@@ -164,5 +213,5 @@ export default function Header({ brand }: { brand: string }) {
                 </Opacity>
             </div> */}
         </div>
-    );
+    ) : null;
 }

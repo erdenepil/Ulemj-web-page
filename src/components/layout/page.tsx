@@ -8,7 +8,7 @@ import { colorCodes } from "lib/helper";
 import { Brand } from "lib/types/brand.type";
 
 export default function Page({ children }: { children: any }) {
-    const [brand, setBrand] = useState<string>("grease");
+    const [brand, setBrand] = useState<string>("ulemj");
     const router = useRouter();
     const { pathname } = router;
 
@@ -26,28 +26,32 @@ export default function Page({ children }: { children: any }) {
                 setBrand("goodprice");
             } else if (pathname.includes("stardom")) {
                 setBrand("stardom");
-            } else if (pathname.includes("buildings")) {
-                setBrand("buildings");
+            } else {
+                setBrand("ulemj");
             }
         }
     }, [router]);
 
-    return (
-        <Opacity className={`w-screen h-screen overflow-x-hidden font-rubik`}>
-            <div
-                className={`${
-                    colorCodes[brand as keyof Brand]?.bgColor
-                } w-full h-5 md:h-8`}
-            ></div>
-            <div
-                className={`mx-5 border-r border-l ${
-                    colorCodes[brand as keyof Brand]?.border
-                }`}
+    return brand ? (
+        <>
+            <Opacity
+                className={`w-screen h-screen overflow-x-hidden font-rubik`}
             >
-                <Header brand={brand} />
-                <div className="pt-4">{children}</div>
-                <Footer brand={brand} />
-            </div>
-        </Opacity>
-    );
+                <div
+                    className={`${
+                        colorCodes[brand as keyof Brand]?.bgColor
+                    } w-full h-5 md:h-8`}
+                ></div>
+                <div
+                    className={`mx-5 border-r border-l ${
+                        colorCodes[brand as keyof Brand]?.border
+                    }`}
+                >
+                    <Header brand={brand} />
+                    <div className="pt-4">{children}</div>
+                    <Footer brand={brand} />
+                </div>
+            </Opacity>
+        </>
+    ) : null;
 }

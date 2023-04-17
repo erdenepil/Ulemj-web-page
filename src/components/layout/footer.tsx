@@ -100,20 +100,19 @@ export default function Footer({ brand }: { brand: string }) {
                 ],
             },
         ],
-
         clinic: [
             {
                 title: { en: "Navigation", mon: "Хэсэх" },
                 items: [
                     {
-                        en: "Shop",
+                        en: "Appointment",
                         mon: "Дэлгүүр",
-                        route: "https://shop.ulemjgrease.com/",
+                        route: "http://appointment.ulemjgrease.com/salon-profile/clinic/",
                     },
                     {
-                        en: "Booking",
+                        en: "Treatments",
                         mon: "Цаг захиалах",
-                        route: "http://appointment.ulemjgrease.com/",
+                        route: "http://appointment.ulemjgrease.com/salon-profile/clinic/services",
                     },
                     { en: "About", mon: "Дэлгэрэнгүй", route: "/about" },
                 ],
@@ -122,14 +121,14 @@ export default function Footer({ brand }: { brand: string }) {
                 title: { en: "Contact", mon: "Холбоо барих" },
                 items: [
                     {
-                        en: "grease@ulemj.mn",
-                        mon: "grease@ulemj.mn",
-                        route: "grease@ulemj.mn",
+                        en: "medical@ulemj.mn",
+                        mon: "medical@ulemj.mn",
+                        route: "medical@ulemj.mn",
                     },
                     {
-                        en: "+976 77779595",
-                        mon: "+976 77779595",
-                        route: "+976 77779595",
+                        en: "+976 70004466",
+                        mon: "+976 70004466",
+                        route: "+976 70004466",
                     },
                 ],
             },
@@ -139,17 +138,12 @@ export default function Footer({ brand }: { brand: string }) {
                     {
                         en: "Instagram",
                         mon: "Instagram",
-                        route: "https://www.instagram.com/ulemj.grease/",
+                        route: "https://www.instagram.com/ulemj.clinic/",
                     },
                     {
                         en: "Facebook",
                         mon: "Facebook",
-                        route: "https://www.facebook.com/greasesalon",
-                    },
-                    {
-                        en: "Youtube",
-                        mon: "Youtube",
-                        route: "https://www.youtube.com/@ulemjgreasesalon1277",
+                        route: "https://www.facebook.com/AntiAgingClinc/",
                     },
                 ],
             },
@@ -161,12 +155,12 @@ export default function Footer({ brand }: { brand: string }) {
                     {
                         en: "Shop",
                         mon: "Дэлгүүр",
-                        route: "https://shop.ulemjgrease.com/",
+                        route: "https://www.instagram.com/stardom_boutique/",
                     },
                     {
-                        en: "Booking",
+                        en: "Lookbook",
                         mon: "Цаг захиалах",
-                        route: "http://appointment.ulemjgrease.com/",
+                        route: "https://www.facebook.com/stardombyplatinum",
                     },
                     { en: "About", mon: "Дэлгэрэнгүй", route: "/about" },
                 ],
@@ -175,15 +169,15 @@ export default function Footer({ brand }: { brand: string }) {
                 title: { en: "Contact", mon: "Холбоо барих" },
                 items: [
                     {
-                        en: "grease@ulemj.mn",
-                        mon: "grease@ulemj.mn",
-                        route: "grease@ulemj.mn",
+                        en: "agii@ulemj.mn",
+                        mon: "agii@ulemj.mn",
+                        route: "agii@ulemj.mn",
                     },
-                    {
-                        en: "+976 77779595",
-                        mon: "+976 77779595",
-                        route: "+976 77779595",
-                    },
+                    // {
+                    //     en: "+976 77779595",
+                    //     mon: "+976 77779595",
+                    //     route: "+976 77779595",
+                    // },
                 ],
             },
             {
@@ -192,17 +186,144 @@ export default function Footer({ brand }: { brand: string }) {
                     {
                         en: "Instagram",
                         mon: "Instagram",
-                        route: "https://www.instagram.com/ulemj.grease/",
+                        route: "https://www.instagram.com/stardom_boutique/",
                     },
                     {
                         en: "Facebook",
                         mon: "Facebook",
-                        route: "https://www.facebook.com/greasesalon",
+                        route: "https://www.facebook.com/stardombyplatinum",
+                    },
+                ],
+            },
+        ],
+        goodprice: [
+            {
+                title: { en: "Navigation", mon: "Хэсэх" },
+                items: [
+                    {
+                        en: "Delivery",
+                        mon: "Дэлгүүр",
+                        route: "+97677775555",
                     },
                     {
-                        en: "Youtube",
-                        mon: "Youtube",
-                        route: "https://www.youtube.com/@ulemjgreasesalon1277",
+                        en: "Shop",
+                        mon: "Цаг захиалах",
+                        route: "http://goodprice.mindplay.mn/shopTab/",
+                    },
+                    { en: "About", mon: "Дэлгэрэнгүй", route: "/about" },
+                ],
+            },
+            {
+                title: { en: "Contact", mon: "Холбоо барих" },
+                items: [
+                    {
+                        en: "goodprice@ulemj.mn ",
+                        mon: "goodprice@ulemj.mn ",
+                        route: "goodprice@ulemj.mn ",
+                    },
+                    {
+                        en: "+976 77775555",
+                        mon: "+976 77775555",
+                        route: "+976 77775555",
+                    },
+                ],
+            },
+            {
+                title: { en: "Social media", mon: "Сошиал медиа" },
+                items: [
+                    // {
+                    //     en: "Instagram",
+                    //     mon: "Instagram",
+                    //     route: "https://www.instagram.com/stardom_boutique/",
+                    // },
+                    {
+                        en: "Facebook",
+                        mon: "Facebook",
+                        route: "https://www.facebook.com/goodpricemarket",
+                    },
+                ],
+            },
+        ],
+        california: [
+            {
+                title: { en: "Navigation", mon: "Хэсэх" },
+                items: [
+                    {
+                        en: "Reservation",
+                        mon: "Дэлгүүр",
+                        route: "+97611319031",
+                    },
+                    {
+                        en: "Services",
+                        mon: "Цаг захиалах",
+                        route: "https://www.facebook.com/California.Restaurant.MN",
+                    },
+                    { en: "About", mon: "Дэлгэрэнгүй", route: "/about" },
+                ],
+            },
+            {
+                title: { en: "Contact", mon: "Холбоо барих" },
+                items: [
+                    {
+                        en: "california@ulemj.mn",
+                        mon: "california@ulemj.mn",
+                        route: "california@ulemj.mn",
+                    },
+                    {
+                        en: "+976 11319031",
+                        mon: "+976 11319031",
+                        route: "+976 11319031",
+                    },
+                ],
+            },
+            {
+                title: { en: "Social media", mon: "Сошиал медиа" },
+                items: [
+                    // {
+                    //     en: "Instagram",
+                    //     mon: "Instagram",
+                    //     route: "https://www.instagram.com/stardom_boutique/",
+                    // },
+                    {
+                        en: "Facebook",
+                        mon: "Facebook",
+                        route: "https://www.facebook.com/California.Restaurant.MN",
+                    },
+                ],
+            },
+        ],
+        ulemj: [
+            {
+                title: { en: "Navigation", mon: "Хэсэх" },
+                items: [{ en: "About", mon: "Дэлгэрэнгүй", route: "/about" }],
+            },
+            {
+                title: { en: "Contact", mon: "Холбоо барих" },
+                items: [
+                    {
+                        en: "info@ulemj.mn",
+                        mon: "info@ulemj.mn",
+                        route: "info@ulemj.mn",
+                    },
+                    {
+                        en: "+976 77770090",
+                        mon: "+976 77770090",
+                        route: "+976 77770090",
+                    },
+                ],
+            },
+            {
+                title: { en: "Social media", mon: "Сошиал медиа" },
+                items: [
+                    // {
+                    //     en: "Instagram",
+                    //     mon: "Instagram",
+                    //     route: "https://www.instagram.com/stardom_boutique/",
+                    // },
+                    {
+                        en: "Facebook",
+                        mon: "Facebook",
+                        route: "https://www.facebook.com/profile.php?id=100082994967506",
                     },
                 ],
             },

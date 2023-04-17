@@ -3,9 +3,10 @@ import Carousel from "components/home/carousel";
 import Companies from "components/home/companies";
 import Products from "components/home/product";
 import RunningText from "components/home/running-text";
-import Salon from "components/home/salon";
+import Salon from "components/home/cards";
 import Service from "components/home/service";
 import { useAppState } from "lib/context/app";
+import MidText from "components/home/mid-text";
 
 export default function Clinic() {
     return (
@@ -13,26 +14,17 @@ export default function Clinic() {
             <Banner brand="clinic" />
             <RunningText
                 images={[
-                    "phytomer",
                     "lumenis",
-                    "bodyography",
-                    "ionto",
-                    "cuccio",
-                    "orly",
-                    "hantesis",
-                    "christina",
-                    "lpg",
-                    "woody",
-                    "gigi",
-                    "goli",
-                    "byebyeblemish",
+                    "mccm",
+                    "koru",
+                    "ultherapy",
+                    "aurora",
+                    "bio",
+                    "koizumi",
                 ]}
             />
             <Salon brand="clinic" />
-            <div className="self-center py-5 text-center font-bold">
-                Sustainability – Customer Service – Quality - Personalization -
-                Innovation - Professionalism and Teamwork.
-            </div>
+            <MidText brand="clinic" />
             <Products brand="clinic" />
             <Service brand="clinic" />
             <Companies />
