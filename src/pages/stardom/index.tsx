@@ -4,7 +4,7 @@ import Companies from "components/home/companies";
 import MidText from "components/home/mid-text";
 import Products from "components/home/product";
 import RunningText from "components/home/running-text";
-import Salon from "components/home/salon";
+import Salon from "components/home/cards";
 import Service from "components/home/service";
 import { useAppState } from "lib/context/app";
 
@@ -14,19 +14,16 @@ export default function Stardom() {
             <Banner brand="stardom" />
             <RunningText
                 images={[
-                    "phytomer",
-                    "lumenis",
-                    "bodyography",
-                    "ionto",
-                    "cuccio",
-                    "orly",
-                    "hantesis",
-                    "christina",
-                    "lpg",
-                    "woody",
-                    "gigi",
-                    "goli",
-                    "byebyeblemish",
+                    "01",
+                    "02",
+                    "03",
+                    "04",
+                    "05",
+                    "06",
+                    "07",
+                    "08",
+                    "09",
+                    "010",
                 ]}
             />
             <Salon brand="stardom" />
