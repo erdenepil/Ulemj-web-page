@@ -4,7 +4,7 @@ import Companies from "components/home/companies";
 import MidText from "components/home/mid-text";
 import Products from "components/home/product";
 import RunningText from "components/home/running-text";
-import Salon from "components/home/cards";
+import Salon from "components/home/salon";
 import Service from "components/home/service";
 import Fade from "components/layout/fade";
 
